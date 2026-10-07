@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coinbase-pulse-trader-showcase"
+version = "0.1.0"
+description = "Offline Python engineering showcase: state machines, deterministic serialization, and SQLite event integrity"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Mitchel34"}]
+dependencies = []
+
+[project.scripts]
+pulse-showcase = "pulse_trader.demo:main"
+
+[tool.setuptools]
+packages = ["pulse_trader", "pulse_trader.graph"]
+include-package-data = false
